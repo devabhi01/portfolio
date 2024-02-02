@@ -1,0 +1,103 @@
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  min-height: calc(100vh - 80px);
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.line {
+  width: 20%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.swiper {
+  width: 100%;
+  height: 500px;
+  border: 0.5px solid rgba(242, 242, 242, 0.3);
+  --webkit-backdrop-filter: blur(5px);
+  background: transparent;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-top: 5vh;
+}
+
+
+.slideData {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.imgSlide {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left:3vw ;
+  padding-right:3vw ;
+}
+.img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 3vw;
+}
+.previewBtn {
+  background: transparent;
+  justify-self: center;
+  align-self: center;
+  color: #fff;
+  padding: 6px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  border: 1.5px solid #fff;
+  transition: all 0.5s ease;
+}
+.previewBtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .info{
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .previewBtn {
+    font-size: 16px;
+    padding: 5px 18px;
+  }
+  .info{
+    gap: 15px;
+  }
+  .swiper{
+    height: 400px;
+    margin-top: 3vh;
+  }
+  
+}
+
+@media screen and (max-width: 640px) {
+  
+}

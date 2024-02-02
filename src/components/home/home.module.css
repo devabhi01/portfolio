@@ -1,0 +1,179 @@
+.wrapper {
+  width: 80%;
+  min-height: auto;
+  margin: 0 auto 5%;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.can {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.subtitle1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 80px;
+  padding-bottom: 10px;
+}
+.subtitle2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.title {
+  font-size: 58px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.discoverBtn {
+  background: transparent;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 10px;
+  cursor: pointer;
+  width: fit-content;
+  border: 1.5px solid #fff;
+  transition: all 0.5s ease;
+}
+.discoverBtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.animation {
+  align-self: center;
+  justify-self: center;
+  width: 450px;
+}
+
+.scroll{
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  z-index: 100;
+  
+}
+@media screen and (max-width: 1536px) {
+  .wrapper {
+    display: flex;
+  }
+  .subtitle1 {
+    font-size: 22px;
+  }
+  .subtitle2 {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .animation {
+    width: 450px;
+  }
+  .discoverBtn {
+    font-size: 20px;
+    padding: 10px 24px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+
+  .subtitle2 {
+    font-size: 16px;
+  }
+  .discoverBtn {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+  .animation {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 42px;
+  }
+  .animation {
+    width: 350px;
+  }
+  .subtitle2 {
+    font-size: 16px;
+  }
+  .discoverBtn {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 80%;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .animation {
+    width: 250px;
+  }
+  .subtitle2 {
+    font-size: 16px;
+  }
+  .discoverBtn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+  .content {
+    width: 60%;
+  }
+  .can {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    width: 90%;
+  }
+  .center {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    width: 100%;
+  }
+  .subtitle2 {
+    font-size: 18px;
+  }
+  .discoverBtn {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+  .can {
+    width: 400px;
+    margin-top: 50px;
+    justify-self: center;
+  }
+}
